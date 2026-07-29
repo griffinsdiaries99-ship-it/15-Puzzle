@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>63 Puzzle — 8x8 Sliding Puzzle</title>
+<title>15 Puzzle — 4x4 Sliding Puzzle</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz48cmVjdCB3aWR0aD0nMTAwJyBoZWlnaHQ9JzEwMCcgcng9JzIwJyBmaWxsPScjRkY2QjAwJy8+PHRleHQgeD0nNTAlJyB5PSc2NSUnIGZvbnQtZmFtaWx5PSdGcmVkb2thLCBBcmlhbCwgc2Fucy1zZXJpZicgZm9udC13ZWlnaHQ9JzcwMCcgZm9udC1zaXplPSc1NScgZmlsbD0nd2hpdGUnIHRleHQtYW5jaG9yPSdtaWRkbGUnPjE1PC90ZXh0Pjwvc3ZnPg==">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
@@ -366,8 +366,8 @@
 <body>
 
 <div class="title-card">
-  <h1>🧩 63 Puzzle</h1>
-  <p class="subtitle">8×8 sliding puzzle — arrange tiles 1 to 63</p>
+  <h1>🧩 15 Puzzle</h1>
+  <p class="subtitle">4×4 sliding puzzle — arrange tiles 1 to 15</p>
 </div>
 
 <div class="top-row">
@@ -406,7 +406,7 @@
       <button id="rightBtn" aria-label="Right">▶</button>
     </div>
   </div>
-  <div class="hint">Move tiles in grid<br>to order them from <b>1 to 63</b>.</div>
+  <div class="hint">Move tiles in grid<br>to order them from <b>1 to 15</b>.</div>
 </div>
 
 <div class="footer">
@@ -430,8 +430,8 @@
 </div>
 
 <script>
-  const SIZE = 8;
-  const TOTAL = SIZE * SIZE; // 64 cells, 63 tiles + 1 blank
+  const SIZE = 4;
+  const TOTAL = SIZE * SIZE; // 16 cells, 15 tiles + 1 blank
   const GAP = Math.max(4, Math.round(56 / SIZE));
 
   const boardEl = document.getElementById('board');
